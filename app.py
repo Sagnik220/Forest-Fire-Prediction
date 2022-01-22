@@ -21,9 +21,9 @@ def predict():
     output='{0:.{1}f}'.format(prediction[0][1], 2)
 
     if output>str(0.5):
-        return render_template('index.html',pred='Your Forest is in Danger.\nProbability of fire occuring is {}'.format(output),bhai="Forest is not safe")
+        return render_template('index.html',pred='Your Forest is in Danger.\nProbability of fire occuring is {}'.format(output))
     else:
-        return render_template('index.html',pred='Your Forest is safe.\n Probability of fire occuring is {}'.format(output),bhai="Your Forest is Safe for now")
+        return render_template('index.html',pred='Your Forest is safe.\n Probability of fire occuring is {}'.format(output))
 
 
 if __name__ == '__main__':
